@@ -1,0 +1,20 @@
+{% extends "_base.html" %}
+
+{% block content %}
+<br/>
+
+<h1>Результаты теста:</h1>
+
+<div style="padding:2em">
+{% if cats=='no' and prog=='no' %}
+    <h2>Вы очень странный человек!</h2>
+{% elif cats=='no' and prog=='yes' %}
+    <h2>Нет у вас сердца!</h2>
+{% elif cats=='yes' and prog=='no' %}
+    <h2>Я всё понимаю, но собаки лучше.</h2>
+{% else %}
+    <h2>Вы похожи на миллионы других программистов.</h2>
+{% endif %}
+
+{% endblock %}
+</div>
